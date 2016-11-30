@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS内嵌字体</title>
+		<style type="text/css">
+			@font-face {
+				font-family: 'testFont';
+				src: url("font2/base64.eot");
+				src: url("font2/base64.eot?#iefix") format("embedded-opentype")
+			}
+			@font-face {
+				font-family: 'testFont';
+				src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAA............................LA) format("woff");
+	            font-weight: normal
+			}
+			span{
+				font-family: testFont;
+				font-size: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<span>&#xe619</span>
+	</body>
+
+</html>
